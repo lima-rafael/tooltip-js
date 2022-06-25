@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Document</title>
+
+  <style>
+    .body {
+      width: 100%;
+      max-width: 960px;
+      margin: auto;
+      font-family: 'Open Sans', sans-serif;
+      padding-left: 20px;
+      padding-right: 20px;
+      overflow: auto;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .tooltips {
+      background: #333;
+      border-radius: 20px;
+      padding: 5px 10px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .tooltips-content {
+      background: #333;
+      color: #fff;
+      padding: 5px 30px;
+      border-radius: 20px;
+      z-index: 100;
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1>Tooltip</h1>
+  <div>
+    <p>Lorem ipsum dolor sit, amet adipisicing elit. Aliquid eveniet illum, perferendis labore error dolorum, aperiam eius molestias consequatur consectetur quia modi, alias mollitia nisi numquam? Aperiam quos amet blanditiis hic deleniti totam accusantium voluptas maxime dignissimos earum aliquid reprehenderit rem officiis, placeat quis id! Sit similique necessitatibus quo dolorem deserunt? Quas.</p>
+    <p>Lorem ipsum dolor sit, amet adipisicing elit. Aliquid eveniet illum, perferendis labore error dolorum, aperiam eius molestias consequatur consectetur quia modi, alias mollitia nisi numquam? Aperiam quos amet blanditiis hic deleniti totam accusantium voluptas maxime dignissimos earum aliquid reprehenderit rem officiis, placeat quis id! Sit similique necessitatibus quo dolorem deserunt? Quas.</p>
+    <p>Lorem ipsum dolor sit, amet <a class="tooltips">consectetur</a> adipisicing elit. Aliquid eveniet illum, perferendis labore error dolorum, aperiam eius molestias consequatur consectetur quia modi, alias mollitia nisi numquam? Aperiam quos amet blanditiis hic deleniti totam accusantium voluptas maxime dignissimos earum aliquid reprehenderit rem officiis, placeat quis id! Sit similique necessitatibus quo dolorem deserunt? Quas.</p>
+    <div class="tooltips-content">
+      <p>Esse é o texto do tooltips!</p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
